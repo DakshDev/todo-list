@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>To Do List</title>
+</head>
+<body>
+
+    <div class="main">
+        <div class="title">Todo List</div>
+        <div class="inp_box">
+            <textarea textarea_tag placeholder="Type List Here" class="textList"></textarea>
+            <input type="submit" value="Save" send_btn class="btns">
+        </div>
+    </div>
+
+    <!-- Pop up to edit list -->
+    <div class="popup_to_edit" popup_to_edit>
+        <div class="inp_box">
+            <span class="close" close_edit_box>✕</span>
+            <textarea placeholder="Change List" class="textList" change_text_list></textarea>
+            <input type="submit" value="Change" change_btn class="btns">
+            <div class="cancleBtnParent">
+                <input type="submit" value="Cancle" cancle_btn close_edit_box>
+            </div>
+        </div>
+    </div>
+
+    <div todo_list_box>
+
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
